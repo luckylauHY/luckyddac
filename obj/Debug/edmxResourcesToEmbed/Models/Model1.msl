@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+    <EntitySetMapping Name="containers">
+      <EntityTypeMapping TypeName="databaseModel.container">
+        <MappingFragment StoreEntitySet="container">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ConName" ColumnName="ConName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="schedules">
+      <EntityTypeMapping TypeName="databaseModel.schedule">
+        <MappingFragment StoreEntitySet="schedule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="depart" ColumnName="depart" />
+          <ScalarProperty Name="arrive" ColumnName="arrive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yards">
+      <EntityTypeMapping TypeName="databaseModel.yard">
+        <MappingFragment StoreEntitySet="yard">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="yardName" ColumnName="yardName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
